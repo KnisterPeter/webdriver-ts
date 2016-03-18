@@ -14,14 +14,14 @@ Object.keys(env)
 const localConfig = (): [string, ICapabilities] => [
   'http://localhost:4444/wd/hub',
   {
-    browserName: process.env.BROWSER
+    browserName: process.env.BROWSER || 'firefox'
   }
 ];
 
 const browserStackConfig = (): [string, ICapabilities] => [
   'https://hub.browserstack.com/wd/hub',
   {
-    'browserName' : process.env.BROWSER,
+    'browserName' : process.env.BROWSER || 'firefox',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME,
     'browserstack.key' : process.env.BROWSERSTACK_KEY
   }
