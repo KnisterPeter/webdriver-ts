@@ -1,6 +1,6 @@
 {
   "name": "webdriver-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lowlevel selenium implementation in typescript",
   "main": "dist/src/index.js",
   "files": [
