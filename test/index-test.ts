@@ -1,11 +1,12 @@
 import { assert } from 'chai';
 import { join } from 'path';
-import { readFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { Pretend } from 'pretend';
 
 import { SeleniumApi, ICapabilities, IResponse, IElement } from '../src/index';
 
-const env = JSON.parse(readFileSync(join(__dirname, '..', '..', '.env.json')).toString());
+const envFile = join(__dirname, '..', '..', '.env.json');
+const env = existsSync(envFile) ? JSON.parse(readFileSync(envFile).toString()) : {};
 Object.keys(env)
   .filter((key) => !process.env[key])
   .forEach((key) => process.env[key] = env[key]);
