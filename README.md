@@ -12,6 +12,7 @@ A lowlevel selenium implementation in typescript.
 ## Features
 
 * Use local selenium-server
+* Use [SauceLabs](https://saucelabs.com)
 * Use [BrowserStack](https://www.browserstack.com/)
 
 # Usage
@@ -46,6 +47,19 @@ async function local() {
   await api.deleteSession(session.sessionId);
 }
 
+async function sauceLabs() {
+  const browser = Pretend.builder()
+    .basicAuthentication('username', 'access-key')
+    .target(SeleniumApi, 'http://ondemand.saucelabs.com/wd/hub');
+  const session = await api.newSession({
+    desiredCapabilities: {
+      'browserName': 'firefox'
+    }
+  });
+  const response = await api.get(session.sessionId, {url: 'https://www.google.com'});
+  await api.deleteSession(session.sessionId);
+}
+
 async function browserStack() {
   const browser = Pretend.builder().target(SeleniumApi, 'https://hub.browserstack.com/wd/hub');
   const session = await api.newSession({
@@ -59,3 +73,7 @@ async function browserStack() {
   await api.deleteSession(session.sessionId);
 }
 ```
+
+----------
+
+Thanks to [SauceLabs](https://saucelabs.com) and [BrowserStack](https://www.browserstack.com/) for a free test account.

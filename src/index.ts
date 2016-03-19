@@ -24,6 +24,7 @@ export interface IElement {
 }
 
 export interface IResponse {
+  status: number;
   state: 'success' | 'unhandled error';
   sessionId: string;
 }
