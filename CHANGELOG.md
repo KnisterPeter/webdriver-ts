@@ -1,5 +1,15 @@
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/knisterpeter/webdriver-ts/compare/v0.0.2...v0.1.0) (2016-03-19)
+
+
+### Features
+
+* Adds SauceLabs support ([dee8d7e](https://github.com/knisterpeter/webdriver-ts/commit/dee8d7e))
+
+
+
 <a name="0.0.2"></a>
-## 0.0.2 (2016-03-18)
+## [0.0.2](https://github.com/knisterpeter/webdriver-ts/compare/2ba9b93...v0.0.2) (2016-03-18)
 
 
 ### Bug Fixes
