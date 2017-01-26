@@ -13,3 +13,5 @@ env:
     - SELENIUM=saucelabs
 matrix:
   fast_finish: true
+before_script: 'npm run linter'
+script: 'npm run test'

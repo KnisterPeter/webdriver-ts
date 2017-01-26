@@ -1,6 +1,6 @@
 import { assert } from 'chai';
-import { join } from 'path';
 import { existsSync, readFileSync } from 'fs';
+import { join } from 'path';
 import { Pretend } from 'pretend';
 
 import { SeleniumApi, ICapabilities, IResponse, IElement } from '../src/index';
@@ -21,16 +21,16 @@ const localConfig = (): [string, ICapabilities] => [
 const browserStackConfig = (): [string, ICapabilities] => [
   'https://hub.browserstack.com/wd/hub',
   {
-    'browserName' : process.env.BROWSER || 'firefox',
+    browserName : process.env.BROWSER || 'firefox',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME,
     'browserstack.key' : process.env.BROWSERSTACK_KEY
   }
 ];
 
 const saucueLabsConfig = (): [string, ICapabilities] => [
-  "http://ondemand.saucelabs.com/wd/hub",
+  'http://ondemand.saucelabs.com/wd/hub',
   {
-    'browserName' : process.env.BROWSER || 'firefox'
+    browserName : process.env.BROWSER || 'firefox'
   }
 ];
 
