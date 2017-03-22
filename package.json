@@ -37,10 +37,10 @@
     "rimraf": "2.6.1",
     "source-map-support": "0.4.14",
     "tslint": "4.5.1",
-    "typescript": "2.1.6"
+    "typescript": "^2.2.1"
   },
   "dependencies": {
-    "pretend": "0.5.0"
+    "pretend": "0.5.1"
   },
   "publishConfig": {
     "tag": "next"
