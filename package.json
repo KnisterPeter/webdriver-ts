@@ -40,7 +40,7 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
-    "pretend": "0.5.1"
+    "pretend": "0.6.0"
   },
   "publishConfig": {
     "tag": "next"
