@@ -1,5 +1,7 @@
 # webdriver-ts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/webdriver-ts.svg)](https://greenkeeper.io/)
+
 [![GitHub license](https://img.shields.io/github/license/KnisterPeter/webdriver-ts.svg)]()
 [![Travis](https://img.shields.io/travis/KnisterPeter/webdriver-ts.svg)](https://travis-ci.org/KnisterPeter/webdriver-ts)
 [![David](https://img.shields.io/david/KnisterPeter/webdriver-ts.svg)](https://david-dm.org/KnisterPeter/webdriver-ts)
