@@ -1,13 +1,10 @@
 # webdriver-ts
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/webdriver-ts.svg)](https://greenkeeper.io/)
-
 [![GitHub license](https://img.shields.io/github/license/KnisterPeter/webdriver-ts.svg)]()
 [![Travis](https://img.shields.io/travis/KnisterPeter/webdriver-ts.svg)](https://travis-ci.org/KnisterPeter/webdriver-ts)
-[![David](https://img.shields.io/david/KnisterPeter/webdriver-ts.svg)](https://david-dm.org/KnisterPeter/webdriver-ts)
-[![David](https://img.shields.io/david/dev/KnisterPeter/webdriver-ts.svg)](https://david-dm.org/KnisterPeter/webdriver-ts#info=devDependencies&view=table)
 [![npm](https://img.shields.io/npm/v/webdriver-ts.svg)](https://www.npmjs.com/package/webdriver-ts)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/webdriver-ts.svg)](https://greenkeeper.io/)
 
 A lowlevel selenium implementation in typescript.
 
