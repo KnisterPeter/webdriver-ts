@@ -1,3 +1,4 @@
+import 'isomorphic-fetch';
 import { Get, Post, Delete } from 'pretend';
 
 export interface ICapabilities {

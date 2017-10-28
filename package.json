@@ -40,7 +40,8 @@
     "typescript": "^2.5.3"
   },
   "dependencies": {
-    "pretend": "0.7.0"
+    "isomorphic-fetch": "2.2.1",
+    "pretend": "1.0.0"
   },
   "publishConfig": {
     "tag": "next"
